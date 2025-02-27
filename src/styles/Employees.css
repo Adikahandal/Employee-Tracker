@@ -1,0 +1,126 @@
+/* Employee_tracker/client/src/styles/Employees.css */
+.employees-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-bar:focus {
+    border-color: #4CAF50;
+  }
+  
+  .status-filter {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .status-filter:focus {
+    border-color: #4CAF50;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .employee-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .employee-table tbody tr {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .employee-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .employee-table td {
+    color: #555;
+  }
+  
+  .employee-table td,
+  .employee-table th {
+    border-left: 1px solid #ddd;
+  }
+  
+  .employee-table td:first-child,
+  .employee-table th:first-child {
+    border-left: none;
+  }
+  
+  .employee-table td:last-child,
+  .employee-table th:last-child {
+    border-right: none;
+  }
+  
+  @media (max-width: 768px) {
+    .employee-table th, .employee-table td {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .status-filter {
+      width: 100%;
+    }
+  }
+  

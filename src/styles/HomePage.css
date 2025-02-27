@@ -1,0 +1,65 @@
+.home-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #252525;
+  color: white;
+  padding: 20px;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* For tablet (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* For mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* For smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 8px;
+  }
+}

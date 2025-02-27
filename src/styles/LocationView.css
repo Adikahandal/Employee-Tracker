@@ -1,0 +1,102 @@
+/* Employee_tracker/client/src/styles/LocationView.css */
+.location-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .search-bar:focus {
+    border-color: #4CAF50;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .employee-table th {
+    background-color: #287da4;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .employee-table tbody tr {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .employee-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .employee-table td {
+    color: #555;
+  }
+  
+  .employee-table td,
+  .employee-table th {
+    border-left: 1px solid #ddd;
+  }
+  
+  .employee-table td:first-child,
+  .employee-table th:first-child {
+    border-left: none;
+  }
+  
+  .employee-table td:last-child,
+  .employee-table th:last-child {
+    border-right: none;
+  }
+  
+  h2 {
+    margin-top: 40px;
+    color: #333;
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .employee-table th, .employee-table td {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+  
+    .search-bar {
+      max-width: 100%;
+    }
+  }
+  

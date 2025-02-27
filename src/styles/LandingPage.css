@@ -1,0 +1,184 @@
+/* LandingPage.css */
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    padding: 0 0 10px 50px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 4%;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.office-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding smooth transition */
+}
+
+.office-section:hover {
+    transform: scale(1.1); /* Make the office-section pop-out */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adding shadow for emphasis */
+}
+
+.office-section h2 {
+    font-size: 1.2rem;
+}
+
+.location-box {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+
+.location-box:hover {
+    background-color: #218838;
+}
+
+.popup-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: inline-block;
+    opacity: 1;
+}
+
+/* For tablet (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .map-container {
+    width: 80%;
+    height: 400px;
+    margin-left: 0;
+  }
+
+  .links-container {
+    width: 100%;
+    text-align: left;
+  }
+
+  .office-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+/* For mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .landing-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+  }
+
+  .links-container {
+    width: 100%;
+    text-align: left;
+  }
+
+  .office-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .location-box {
+    padding: 8px 12px;
+  }
+}
+
+/* For smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+
+  .office-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .location-box {
+    padding: 6px 10px;
+  }
+}

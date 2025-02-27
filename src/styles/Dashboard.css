@@ -1,0 +1,162 @@
+/* Dashboard.css */
+
+.dashboard {
+  background-color: #323232;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  font-family: Arial, sans-serif;
+  transition: padding 0.3s ease;
+}
+
+.dashboard h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.dashboard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.dashboard nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: gap 0.3s ease;
+}
+
+.dashboard nav a {
+  display: block;
+  color: white;
+  padding: 12px;
+  background-color: #2980b9;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, padding 0.3s ease, width 0.3s ease;
+}
+
+.dashboard nav a:hover {
+  background-color: #34495e;
+  transform: translateX(5px);
+  padding: 14px;
+}
+
+/* For tablet (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .dashboard {
+    padding: 15px;
+  }
+
+  .dashboard h2 {
+    font-size: 2rem;
+  }
+
+  .dashboard h3 {
+    font-size: 1.3rem;
+  }
+
+  .dashboard nav {
+    gap: 10px;
+  }
+
+  .dashboard nav a {
+    padding: 10px;
+    width: 50%; /* Set width to 50% to make links responsive */
+    margin: 0 auto; /* Center the anchor links */
+    transition: width 0.3s ease, padding 0.3s ease;
+  }
+
+  .dashboard nav a:hover {
+    transform: translateX(5px);
+    padding: 12px; /* Slightly bigger padding on hover */
+  }
+}
+
+/* For laptop (between 1024px and 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard h2 {
+    font-size: 2.2rem;
+  }
+
+  .dashboard h3 {
+    font-size: 1.4rem;
+  }
+
+  .dashboard nav {
+    gap: 12px;
+  }
+
+  .dashboard nav a {
+    padding: 12px;
+    width: 60%; /* Slightly wider links for laptop screens */
+    margin: 0 auto; /* Center the anchor links */
+    transition: width 0.3s ease, padding 0.3s ease, transform 0.3s ease;
+  }
+
+  .dashboard nav a:hover {
+    transform: translateX(5px);
+    padding: 14px; /* Bigger padding on hover */
+  }
+}
+
+/* For mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .dashboard h2 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard h3 {
+    font-size: 1.2rem;
+  }
+
+  .dashboard nav {
+    gap: 8px;
+  }
+
+  .dashboard nav a {
+    padding: 8px;
+    font-size: 1rem;
+    width: 50%; /* Center the anchor links */
+    margin: 0 auto;
+    transition: width 0.3s ease, padding 0.2s ease;
+  }
+
+  .dashboard nav a:hover {
+    transform: translateX(5px);
+    padding: 10px; /* Bigger padding on hover */
+  }
+}
+
+/* For smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 8px;
+  }
+
+  .dashboard h2 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard h3 {
+    font-size: 1rem;
+  }
+
+  .dashboard nav a {
+    padding: 6px;
+    font-size: 0.9rem;
+    width: 50%;
+    margin: 0 auto; /* Center the anchor links */
+    transition: width 0.3s ease, padding 0.2s ease;
+  }
+}
